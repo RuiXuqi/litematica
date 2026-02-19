@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 3,
-		"description": "Litematica Resources"
+		"description": "${mod_name} Resources",
+		"pack_format": 3
 	}
 }

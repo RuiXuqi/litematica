@@ -7,7 +7,6 @@ import java.util.Optional;
 import javax.annotation.Nullable;
 import com.google.common.collect.ImmutableMap;
 
-import malilib.mixin.access.DataFixerMixin;
 import malilib.util.ListUtils;
 import malilib.util.data.Constants;
 import malilib.util.data.palette.Palette;
@@ -27,7 +26,7 @@ import litematica.schematic.data.EntityData;
 
 public abstract class BaseSchematic implements Schematic
 {
-    public static final int CURRENT_MINECRAFT_DATA_VERSION = ((DataFixerMixin) GameWrap.getClient().getDataFixer()).malilib$getVersion();
+    public static final int CURRENT_MINECRAFT_DATA_VERSION = GameWrap.getClient().getDataFixer().version;
 
     protected final SchematicType type;
 

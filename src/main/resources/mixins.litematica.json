@@ -1,8 +1,10 @@
 {
-	"required": true,
 	"package": "litematica.mixin",
+	"required": true,
+	"refmap": "mixins.litematica.refmap.json",
+	"target": "@env(DEFAULT)",
+	"minVersion": "0.8.5",
 	"compatibilityLevel": "JAVA_8",
-	"minVersion": "0.8",
 	"client": [
 		"access.NextTickListEntryMixin",
 		"IMixinBlockRendererDispatcher",
@@ -22,8 +24,7 @@
 		"MixinNetHandlerPlayClient",
 		"MixinPlayerControllerMP",
 		"MixinRenderGlobal",
-		"MixinWorld",
-		"debug.GuiOverlayDebugMixin"
+		"MixinWorld"
 	],
 	"injectors": {
 		"defaultRequire": 1
